@@ -1,10 +1,16 @@
 function calcular() {
-  let peso = parseFloat(document.getElementById("peso").value);
-  let altura = parseFloat(document.getElementById("altura").value);
+  let peso = document.getElementById("peso").value;
+  let altura = document.getElementById("altura").value;
 
-  imc = peso / (altura * altura);
-  alert(imc.toFixed(2));
-  limparCampos();
+  if (peso == "" || altura == "") {
+    alert("Preencha todos os campos");
+  } else {
+    peso = parseFloat(peso);
+    altura = parseFloat(altura);
+    imc = peso / (altura * altura);
+    alert(imc.toFixed(2));
+    limparCampos();
+  }
 }
 
 function limparCampos() {
