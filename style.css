@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.bg-container {
+    background-image: url("https://media-exp1.licdn.com/dms/image/C511BAQE5Vw0NN9EU9Q/company-background_10000/0/1519812322969?e=2147483647&v=beta&t=Tv3qeUk5y_3Cc4WwT3EckvE1o6RgsR6Igu4Mm-PXb9s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: 0.1px solid turquoise;
+    box-sizing: border-box;
+}
+h1 {
+    color: white;
+    margin-left: 10px;
+}
+label {
+    color: white;
+    margin-left: 10px;
+}
+input {
+    border-radius: 3px;
+    border: none;
+    padding: 8px 10px;
+    width: 50px;
+}
+::placeholder {
+    color: #48b9bf;
+}
+button {
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    color: #48b9bf;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #91d3d1;
+    color: white;
+}
